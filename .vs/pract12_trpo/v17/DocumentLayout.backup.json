@@ -1,0 +1,214 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\st310-07\\Documents\\Shengals\\pract12_trpo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C1B48441-E7BC-40B4-B0A7-96B5B8D14409}|pract12_trpo.csproj|c:\\users\\st310-07\\documents\\shengals\\pract12_trpo\\pages\\userformpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1B48441-E7BC-40B4-B0A7-96B5B8D14409}|pract12_trpo.csproj|solutionrelative:pages\\userformpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1B48441-E7BC-40B4-B0A7-96B5B8D14409}|pract12_trpo.csproj|c:\\users\\st310-07\\documents\\shengals\\pract12_trpo\\service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1B48441-E7BC-40B4-B0A7-96B5B8D14409}|pract12_trpo.csproj|solutionrelative:service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1B48441-E7BC-40B4-B0A7-96B5B8D14409}|pract12_trpo.csproj|c:\\users\\st310-07\\documents\\shengals\\pract12_trpo\\data\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1B48441-E7BC-40B4-B0A7-96B5B8D14409}|pract12_trpo.csproj|solutionrelative:data\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1B48441-E7BC-40B4-B0A7-96B5B8D14409}|pract12_trpo.csproj|c:\\users\\st310-07\\documents\\shengals\\pract12_trpo\\pages\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1B48441-E7BC-40B4-B0A7-96B5B8D14409}|pract12_trpo.csproj|solutionrelative:pages\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1B48441-E7BC-40B4-B0A7-96B5B8D14409}|pract12_trpo.csproj|c:\\users\\st310-07\\documents\\shengals\\pract12_trpo\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1B48441-E7BC-40B4-B0A7-96B5B8D14409}|pract12_trpo.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1B48441-E7BC-40B4-B0A7-96B5B8D14409}|pract12_trpo.csproj|c:\\users\\st310-07\\documents\\shengals\\pract12_trpo\\pages\\userformpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{C1B48441-E7BC-40B4-B0A7-96B5B8D14409}|pract12_trpo.csproj|solutionrelative:pages\\userformpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1B48441-E7BC-40B4-B0A7-96B5B8D14409}|pract12_trpo.csproj|c:\\users\\st310-07\\documents\\shengals\\pract12_trpo\\pages\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{C1B48441-E7BC-40B4-B0A7-96B5B8D14409}|pract12_trpo.csproj|solutionrelative:pages\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1B48441-E7BC-40B4-B0A7-96B5B8D14409}|pract12_trpo.csproj|c:\\users\\st310-07\\documents\\shengals\\pract12_trpo\\observableobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1B48441-E7BC-40B4-B0A7-96B5B8D14409}|pract12_trpo.csproj|solutionrelative:observableobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1B48441-E7BC-40B4-B0A7-96B5B8D14409}|pract12_trpo.csproj|c:\\users\\st310-07\\documents\\shengals\\pract12_trpo\\service\\basedbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1B48441-E7BC-40B4-B0A7-96B5B8D14409}|pract12_trpo.csproj|solutionrelative:service\\basedbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1B48441-E7BC-40B4-B0A7-96B5B8D14409}|pract12_trpo.csproj|c:\\users\\st310-07\\documents\\shengals\\pract12_trpo\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{C1B48441-E7BC-40B4-B0A7-96B5B8D14409}|pract12_trpo.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1B48441-E7BC-40B4-B0A7-96B5B8D14409}|pract12_trpo.csproj|c:\\users\\st310-07\\documents\\shengals\\pract12_trpo\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1B48441-E7BC-40B4-B0A7-96B5B8D14409}|pract12_trpo.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 384,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\st310-07\\Documents\\Shengals\\pract12_trpo\\Pages\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\MainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\st310-07\\Documents\\Shengals\\pract12_trpo\\Pages\\MainPage.xaml.cs",
+              "RelativeToolTip": "Pages\\MainPage.xaml.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAqwDcAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-19T11:20:58.522Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\st310-07\\Documents\\Shengals\\pract12_trpo\\Pages\\MainPage.xaml",
+              "RelativeDocumentMoniker": "Pages\\MainPage.xaml",
+              "ToolTip": "C:\\Users\\st310-07\\Documents\\Shengals\\pract12_trpo\\Pages\\MainPage.xaml",
+              "RelativeToolTip": "Pages\\MainPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-19T11:09:14.634Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserFormPage.xaml",
+              "DocumentMoniker": "C:\\Users\\st310-07\\Documents\\Shengals\\pract12_trpo\\Pages\\UserFormPage.xaml",
+              "RelativeDocumentMoniker": "Pages\\UserFormPage.xaml",
+              "ToolTip": "C:\\Users\\st310-07\\Documents\\Shengals\\pract12_trpo\\Pages\\UserFormPage.xaml",
+              "RelativeToolTip": "Pages\\UserFormPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-19T11:10:49.903Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\st310-07\\Documents\\Shengals\\pract12_trpo\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "C:\\Users\\st310-07\\Documents\\Shengals\\pract12_trpo\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-12T11:50:20.426Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserFormPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\st310-07\\Documents\\Shengals\\pract12_trpo\\Pages\\UserFormPage.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\UserFormPage.xaml.cs",
+              "ToolTip": "C:\\Users\\st310-07\\Documents\\Shengals\\pract12_trpo\\Pages\\UserFormPage.xaml.cs",
+              "RelativeToolTip": "Pages\\UserFormPage.xaml.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwB0AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-19T11:29:01.851Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\st310-07\\Documents\\Shengals\\pract12_trpo\\Service\\UserService.cs",
+              "RelativeDocumentMoniker": "Service\\UserService.cs",
+              "ToolTip": "C:\\Users\\st310-07\\Documents\\Shengals\\pract12_trpo\\Service\\UserService.cs",
+              "RelativeToolTip": "Service\\UserService.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABYAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-19T11:27:47.046Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ObservableObject.cs",
+              "DocumentMoniker": "C:\\Users\\st310-07\\Documents\\Shengals\\pract12_trpo\\ObservableObject.cs",
+              "RelativeDocumentMoniker": "ObservableObject.cs",
+              "ToolTip": "C:\\Users\\st310-07\\Documents\\Shengals\\pract12_trpo\\ObservableObject.cs",
+              "RelativeToolTip": "ObservableObject.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-19T11:48:25.16Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BaseDbService.cs",
+              "DocumentMoniker": "C:\\Users\\st310-07\\Documents\\Shengals\\pract12_trpo\\Service\\BaseDbService.cs",
+              "RelativeDocumentMoniker": "Service\\BaseDbService.cs",
+              "ToolTip": "C:\\Users\\st310-07\\Documents\\Shengals\\pract12_trpo\\Service\\BaseDbService.cs",
+              "RelativeToolTip": "Service\\BaseDbService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-19T11:26:45.847Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\st310-07\\Documents\\Shengals\\pract12_trpo\\Data\\User.cs",
+              "RelativeDocumentMoniker": "Data\\User.cs",
+              "ToolTip": "C:\\Users\\st310-07\\Documents\\Shengals\\pract12_trpo\\Data\\User.cs",
+              "RelativeToolTip": "Data\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-19T10:56:23.178Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\st310-07\\Documents\\Shengals\\pract12_trpo\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\st310-07\\Documents\\Shengals\\pract12_trpo\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-19T10:46:18.929Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\st310-07\\Documents\\Shengals\\pract12_trpo\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\st310-07\\Documents\\Shengals\\pract12_trpo\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-12T11:50:18.728Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
