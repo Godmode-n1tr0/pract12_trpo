@@ -32,7 +32,7 @@ namespace pract12_trpo.Pages
         }
         public void go_form(object sender, EventArgs e)
         {
-            NavigationService.Navigate(new StudentFormPage());
+            NavigationService.Navigate(new UserFormPage());
         }
         public void Edit(object sender, EventArgs e)
         {
@@ -43,7 +43,8 @@ namespace pract12_trpo.Pages
             }
             NavigationService.Navigate(new UserFormPage(user));
         }
-        public void remove(object sender, EventArgs e)
+
+        private void remove(object sender, RoutedEventArgs e)
         {
             if (user == null)
             {

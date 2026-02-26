@@ -40,7 +40,13 @@ namespace pract12_trpo.Data
             get => _password;
             set => SetProperty(ref _password, value);
         }
-        
+        private DateTime _createAt;
+        public DateTime CreateAt
+        {
+            get => _createAt;
+            set => SetProperty(ref _createAt, value);
+        }
+
     }
 }
 

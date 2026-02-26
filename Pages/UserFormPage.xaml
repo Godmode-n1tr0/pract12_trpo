@@ -1,30 +1,123 @@
-﻿<Page x:Class="pract12_trpo.Pages.StudentFormPage"
+﻿<Page x:Class="pract12_trpo.Pages.UserFormPage"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:validation="clr-namespace:pract12_trpo.Validation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:pract12_trpo.Pages"
-      mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
-      Title="StudentFormPage">
+      Width="200"
+      Height="300"
+      Background="white"
+      Title="UserFormPage">
 
+    <Page.Resources>
+        <Style TargetType="Label">
+            <Setter Property="FontSize" Value="16"/>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Width" Value="150"/>
+            <Setter Property="Margin" Value="0 0 0 0"/>
+            <Setter Property="BorderBrush" Value="Black"/>
+        </Style>
+        <Style TargetType="TextBox" x:Key="Bottom">
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Width" Value="150"/>
+            <Setter Property="Margin" Value="0 0 0 10"/>
+            <Setter Property="BorderBrush" Value="Black"/>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="Width" Value="100"/>
+            <Setter Property="Background" Value="white"/>
+            <Setter Property="Margin" Value="0 5"/>
+            
+        </Style>
+    </Page.Resources>
     <Grid>
-        <StackPanel>
-            <StackPanel>
-                <Label>Фамилия</Label>
-                <TextBox Text="{Binding LastName}"/>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="180">
+            <StackPanel >
+                <Label>Логин</Label>
+                <TextBox x:Name="LoginUser" >
+                    <TextBox.Text>
+                        <Binding Path="Login" UpdateSourceTrigger="PropertyChanged">
+                            <Binding.ValidationRules>
+                                <validation:ValidationRuleLogin/>
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </TextBox.Text>
+                </TextBox>
+                <ItemsControl Foreground="Red"
+                                FontSize="12"
+                                ItemsSource="{Binding ElementName=LoginUser, Path=(Validation.Errors)}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding ErrorContent}" TextWrapping="Wrap"/>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </StackPanel>
+            <StackPanel >
+                <Label >Имя</Label>
+                <TextBox x:Name="NameUser">
+                    <TextBox.Text>
+                        <Binding Path="Name" UpdateSourceTrigger="PropertyChanged">
+                            <Binding.ValidationRules>
+                                <validation:ValidationRuleName/>
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </TextBox.Text>
+                    </TextBox>
+                    <ItemsControl Foreground="Red"
+                                  FontSize="12"
+                                  ItemsSource="{Binding ElementName=NameUser, Path=(Validation.Errors)}">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding ErrorContent}" TextWrapping="Wrap"/>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
             </StackPanel>
             <StackPanel>
-                <Label>Имя</Label>
-                <TextBox Text="{Binding FirstName}"/>
+                <Label>Почта</Label>
+                <TextBox x:Name="EmailUser">
+                    <TextBox.Text>
+                        <Binding Path="Email" UpdateSourceTrigger="PropertyChanged">
+                            <Binding.ValidationRules>
+                                <validation:ValidationRuleEmail/>
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </TextBox.Text>
+                </TextBox>
+                <ItemsControl Foreground="Red"
+                FontSize="12"
+                ItemsSource="{Binding ElementName=EmailUser, Path=(Validation.Errors)}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding ErrorContent}" TextWrapping="Wrap"/>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
             </StackPanel>
-            <StackPanel>
-                <Label>Отчество</Label>
-                <TextBox Text="{Binding MiddleName}"/>
-            </StackPanel>
-            <StackPanel>
-                <Label>Дата рождения</Label>
-                <DatePicker SelectedDate="{Binding Birthday}"/>
+            <StackPanel >
+                <Label>Пароль</Label>
+                <TextBox x:Name="PasswordUser" Style="{StaticResource Bottom}">
+                    <TextBox.Text>
+                        <Binding Path="Password" UpdateSourceTrigger="PropertyChanged">
+                            <Binding.ValidationRules>
+                                <validation:ValidationRulePassword/>
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </TextBox.Text>
+                </TextBox>
+                <ItemsControl Foreground="Red"
+                FontSize="12"
+                ItemsSource="{Binding ElementName=PasswordUser, Path=(Validation.Errors)}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding ErrorContent}" TextWrapping="Wrap"/>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
             </StackPanel>
             <StackPanel>
                 <Button Click="save">Сохранить в БД</Button>

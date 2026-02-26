@@ -24,28 +24,78 @@ namespace pract12_trpo.Pages
     {
         private UsersService _service = new();
         public User _user = new();
-        bool isEdit = false;
-        public UserFormPage(User? _editStudent = null)
+
+        // Свойство для привязки в XAML
+        public bool IsEdit { get; private set; } = false;
+
+        public UserFormPage(User? editUser = null)
         {
             InitializeComponent();
-            if (_editStudent != null)
+
+            if (editUser != null)
             {
-                _user = _editStudent;
-                isEdit = true;
+                _user = editUser;
+                IsEdit = true;
             }
+
             DataContext = _user;
         }
+
         private void save(object sender, RoutedEventArgs e)
         {
-            if (isEdit)
-                _service.Commit();
-            else
-                _service.Add(_user);
-            NavigationService.GoBack();
+            // Принудительно обновляем источники привязки
+            LoginUser.GetBindingExpression(TextBox.TextProperty)?.UpdateSource();
+            NameUser.GetBindingExpression(TextBox.TextProperty)?.UpdateSource();
+            EmailUser.GetBindingExpression(TextBox.TextProperty)?.UpdateSource();
+            PasswordUser.GetBindingExpression(TextBox.TextProperty)?.UpdateSource();
+
+            // Проверяем валидацию
+            if (!IsFormValid())
+            {
+                MessageBox.Show("Пожалуйста, исправьте ошибки в форме",
+                    "Ошибка валидации", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+
+            // Устанавливаем дату создания ТОЛЬКО для новых пользователей
+            if (!IsEdit)
+            {
+                _user.CreateAt = DateTime.Now;
+            }
+
+            try
+            {
+                if (IsEdit)
+                    _service.Commit();
+                else
+                    _service.Add(_user);
+
+                NavigationService.GoBack();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ошибка при сохранении: {ex.Message}",
+                    "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
+
         private void back(object sender, RoutedEventArgs e)
         {
             NavigationService.GoBack();
+        }
+
+        private bool IsFormValid()
+        {
+            // Проверяем все поля на наличие ошибок валидации
+            var textBoxes = new[] { LoginUser, NameUser, EmailUser, PasswordUser };
+
+            foreach (var textBox in textBoxes)
+            {
+                if (Validation.GetHasError(textBox))
+                    return false;
+            }
+
+            return true;
         }
     }
 }

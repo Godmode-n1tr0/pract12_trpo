@@ -20,10 +20,11 @@ namespace pract12_trpo.Service
         {
             var _user = new User
             {
-                FirstName = user.FirstName,
-                LastName = user.LastName,
-                MiddleName = user.MiddleName,
-                Birthday = user.Birthday,
+                Login = user.Login,
+                Name = user.Name,
+                Email = user.Email,
+                Password = user.Password,
+                CreateAt = DateTime.Now,
             };
             _db.Add<User>(_user);
             Commit();

@@ -5,34 +5,65 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:pract12_trpo.Pages"
       DataContext="{Binding RelativeSource={RelativeSource Self}}"
-      mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      Background="White"
+      Height="400" Width="700"
       Title="MainPage">
 
     <Page.Resources>
         <Style TargetType="Button">
             <Setter Property="Margin" Value="5"/>
             <Setter Property="Padding" Value="5"/>
+            <Setter Property="Background" Value="white"/>
+            <Setter Property="BorderBrush" Value="Black"/>
         </Style>
+
+        <Style TargetType="ListView">
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ListView">
+                        <Border BorderBrush="LightGray"
+                                BorderThickness="2"
+                                CornerRadius="10"
+                                Padding="5">
+                            <ScrollViewer Focusable="false" 
+                                          HorizontalScrollBarVisibility="Auto"
+                                          VerticalScrollBarVisibility="Auto">
+                                <ItemsPresenter SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
+                            </ScrollViewer>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+
     </Page.Resources>
+
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="40"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
+
         <StackPanel Orientation="Horizontal">
             <Button Click="go_form">Добавить</Button>
             <Button Click="remove">Удалить</Button>
         </StackPanel>
-        <ListView Grid.Row="1" ItemsSource="{Binding service.Students}" MouseDoubleClick="Edit" SelectedItem="{Binding student}">
+
+        <ListView Grid.Row="1" 
+                  ItemsSource="{Binding service.Users}" 
+                  MouseDoubleClick="Edit" 
+                  SelectedItem="{Binding user}" >
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <StackPanel>
                         <StackPanel>
-                            <TextBlock Text="{Binding LastName}"/>
-                            <TextBlock Text="{Binding FirstName}"/>
-                            <TextBlock Text="{Binding MiddleName}"/>
-                            <TextBlock Text="{Binding Birthday, StringFormat={}{0:dd.MM.yyyy}}"/>
+                            <TextBlock Text="{Binding Login}"/>
+                            <TextBlock Text="{Binding Name}"/>
+                            <TextBlock Text="{Binding Email}"/>
+                            <TextBlock Text="{Binding Password}"/>
+                            <TextBlock Text="{Binding CreateAt, StringFormat={}{0:dd.MM.yyyy HH:mm:ss}}"/>
                         </StackPanel>
                     </StackPanel>
                 </DataTemplate>
